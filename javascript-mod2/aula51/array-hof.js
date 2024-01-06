@@ -35,3 +35,9 @@ const personagens = [
   }, {})
 
   console.log(racas)
+
+  personagens.sort(function(a, b){
+    return a.nivel + b.nivel
+  })
+
+  console.log(personagens)
