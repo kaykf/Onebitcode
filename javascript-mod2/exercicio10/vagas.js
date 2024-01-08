@@ -1,11 +1,11 @@
 const vagas = []
 
 function listarVagas(){
-    const vagasEmTexto = vagas.reduce(function (textFinal, vaga, indice){
-        textFinal += indice + ". "
-        textFinal += vaga.nome 
-        textFinal += " (" + vaga.cadidatos.length + " candidatos)"
-        return textFinal
+    const vagasEmTexto = vagas.reduce(function (textoFinal, vaga, indice){
+        textoFinal += indice + ". "
+        textoFinal += vaga.nome 
+        textoFinal += " (" + vaga.cadidatos.length + " candidatos)"
+        return textoFinal
     }, "")
     alert(vagasEmTexto)
 }
