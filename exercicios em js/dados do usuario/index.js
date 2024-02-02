@@ -6,7 +6,7 @@ const idade = prompt("Informe a sua idade:")
 
 const conIdade = confirm("Você realmente tem "+ idade+" anos?")
 
-if(confirm = true){
+if(confirm == true){
     repIdade=idade
     alert("Nome: "+ nome +"\nIdade: " + idade+ "\nConfimação da idade: "+ repIdade)
 }else{
