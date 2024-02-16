@@ -19,6 +19,11 @@ function initializeGame(){
     })
 }
 
+function disableRegion(element){
+    element.style.cursor = 'default'
+    element.removeEventListener('click', handBoardClick)
+}
+
 function handBoardClick(ev){
     const span =  ev.currentTarget
     const region = span.dataset.region
@@ -34,6 +39,7 @@ function handBoardClick(ev){
     }
     console.clear()
     console.table(vBoard)
+    disableRegion(span)
 }
 
 document.getElementById('start').addEventListener('click', initializeGame)
