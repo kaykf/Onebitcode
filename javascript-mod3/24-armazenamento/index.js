@@ -9,3 +9,14 @@ document.getElementById('readSesssion').addEventListener('click', function(){
     alert("A informação salva é: " + info )
 })
 
+document.getElementById('localBtn').addEventListener('click', function(){
+    const input = document.getElementById('local')
+    window.localStorage.setItem('text', input.value)
+    input.value = ''
+})
+
+document.getElementById('readLocal').addEventListener('click', function(){
+    const text = localStorage.getItem('text')
+    alert('O LocalStorage é: '+ text)
+})
+
