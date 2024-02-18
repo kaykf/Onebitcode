@@ -20,3 +20,12 @@ document.getElementById('readLocal').addEventListener('click', function(){
     alert('O LocalStorage é: '+ text)
 })
 
+document.getElementById('cookieBtn').addEventListener('click', function(){
+    const input = document.getElementById('cookie')
+    // cookieName = value; expires=UTStringDate; path=/;
+    const cookie = 'info='+input.value + ";"
+    const expiration = "expires=" + new Date(2024,3,3) + ";"
+    const path = "path=/;"
+    document.cookie = cookie + expiration + path
+    input.value = '' 
+})
