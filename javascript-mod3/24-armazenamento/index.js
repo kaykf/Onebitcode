@@ -29,3 +29,12 @@ document.getElementById('cookieBtn').addEventListener('click', function(){
     document.cookie = cookie + expiration + path
     input.value = '' 
 })
+
+document.getElementById('cookie2Btn').addEventListener('click', function(){
+    const input = document.getElementById('cookie2')
+    const cookie = 'text=' + input.value + ';'
+    const expiration = 'expires=' + new Date(2024,0,3)+ ';'
+    const path = 'path=/;'
+    document.cookie = cookie + expiration + path
+    input.value = ''
+})
