@@ -1,6 +1,6 @@
 import pandas as pd
 
-data = pd.read_excel('data/VendaCarros.xlsx')
+data = pd.read_excel('python_start/data2/VendaCarros.xlsx')
 
 print(data)
 
