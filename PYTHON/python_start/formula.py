@@ -9,7 +9,7 @@ sheet = wb["Relátorio"]
 # 2- Referências de linhas e colunas 
 
 min_column = wb.active.min_column
-max_column = wb.active.max_column
+max_column = wb.active.max_column3,22222222
 min_row = wb.active.min_row
 max_row = wb.active.max_row
 
